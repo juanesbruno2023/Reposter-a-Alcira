@@ -1,0 +1,1547 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<meta name="theme-color" content="#e8541a">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- SEO BÁSICO -->
+<meta name="description" content="Tortas y postres artesanales en Ibagué. Personalizados, frescos y hechos con amor. Pide cupcakes, brownies y más.">
+<meta name="keywords" content="repostería en Ibagué, tortas personalizadas, cupcakes, brownies, postres artesanales Colombia">
+<meta name="author" content="Repostería Alcira">
+
+<!-- ROBOTS -->
+<meta name="robots" content="index, follow">
+
+<!-- CANONICAL -->
+<link rel="canonical" href="https://tudominioREAL.com/">
+
+<!-- OPEN GRAPH (REDES SOCIALES) -->
+<meta property="og:title" content="Repostería Alcira | Tortas y Postres Artesanales">
+<meta property="og:description" content="Postres artesanales hechos con amor. Tortas personalizadas, cupcakes y más en Ibagué.">
+<meta property="og:image" content="https://tudominioREAL.com/portadalogo.jpeg">
+<meta property="og:url" content="https://tudominioREAL.com/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Repostería Alcira">
+
+<!-- TWITTER (opcional pero recomendado) -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Repostería Alcira">
+<meta name="twitter:description" content="Tortas y postres artesanales en Ibagué">
+<meta name="twitter:image" content="https://tudominio.com/portadalogo.jpeg">
+
+<meta name="geo.region" content="CO-TOL">
+<meta name="geo.placename" content="Ibagué">
+<meta name="geo.position" content="4.4389;-75.2322">
+
+<title>Repostería Alcira | Tortas artesanales en Ibagué</title>
+<!-- OPEN GRAPH TAGS -->
+<meta property="og:title" content="Repostería Alcira - Postres Artesanales">
+<meta property="og:description" content="Tortas, cupcakes y postres artesanales hechos con amor. Pedidos personalizados en Colombia.">
+<meta property="og:url" content="https://tusitio.com">
+<meta property="og:type" content="website">
+
+<!-- Para WhatsApp -->
+<meta property="og:site_name" content="Repostería Alcira">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Alex+Brush&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+.video-testimonio {
+  max-width: 700px;
+  margin: 3rem auto;
+}
+
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  cursor: pointer;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.video-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0,0,0,0.6);
+  color: white;
+  font-size: 2rem;
+  padding: 20px;
+  border-radius: 50%;
+}
+
+<style>
+  :root {
+    --gold: #D4AF37;
+    --gold-light: #e8c94a;
+    --gold-dark: #B8941F;
+    --dark: #1C1C1C;
+    --cream: #FFF3E0;
+    --cream-dark: #f5e6cc;
+    --white: #ffffff;
+    --gray: #6B6B6B;
+    --green-wa: #25D366;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background: var(--cream);
+    color: var(--dark);
+    overflow-x: hidden;
+  }
+
+  /* ===== NAVBAR ===== */
+  nav {
+    background: var(--dark);
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    padding: 0 2rem;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.4);
+  }
+
+  .nav-logo {
+    font-family: 'Alex Brush', cursive;
+    font-size: 2.2rem;
+    color: var(--gold);
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: opacity 0.3s;
+  }
+  .nav-logo:hover { opacity: 0.85; }
+
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+  }
+
+  .nav-links a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding-bottom: 4px;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s;
+    cursor: pointer;
+  }
+  .nav-links a:hover, .nav-links a.active {
+    color: var(--gold);
+    border-bottom-color: var(--gold);
+  }
+
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 4px;
+  }
+  .hamburger span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: var(--white);
+    transition: all 0.3s;
+    border-radius: 2px;
+  }
+  .hamburger.open span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+  .hamburger.open span:nth-child(2) { opacity: 0; }
+  .hamburger.open span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+
+  .mobile-menu {
+    display: none;
+    position: fixed;
+    top: 72px;
+    left: 0; right: 0;
+    background: var(--dark);
+    padding: 1.5rem 2rem;
+    z-index: 999;
+    flex-direction: column;
+    gap: 1rem;
+    border-top: 1px solid rgba(212,175,55,0.2);
+    animation: slideDown 0.3s ease;
+  }
+  .mobile-menu.open { display: flex; }
+  .mobile-menu a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  .mobile-menu a:hover { color: var(--gold); }
+
+  @keyframes slideDown {
+    from { transform: translateY(-10px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+
+  /* ===== PAGES ===== */
+  .page {
+    display: none;
+    padding-top: 72px;
+    min-height: 100vh;
+    animation: fadeIn 0.4s ease;
+  }
+  .page.active { display: block; }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* ===== HOME PAGE ===== */
+  /* ===== BANNER ===== */
+.banner {
+  background: linear-gradient(135deg, #D4AF37, #e8c94a);
+  color: var(--dark);
+  text-align: center;
+  padding: 1.2rem 1rem;
+  font-family: 'Montserrat', sans-serif;
+  animation: slideDown 0.5s ease;
+}
+
+.banner h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.3rem;
+}
+
+.banner p {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.banner a {
+  display: inline-block;
+  background: var(--dark);
+  color: var(--white);
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.banner a:hover {
+  background: #333;
+  transform: scale(1.05);
+}
+  .hero {
+    background: var(--white);
+    min-height: calc(100vh - 72px);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+    gap: 4rem;
+  }
+
+  .hero-text h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 4.5rem;
+    font-weight: 300;
+    line-height: 1.1;
+    color: var(--dark);
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-text p {
+    font-size: 1.05rem;
+    color: var(--gray);
+    font-weight: 300;
+    line-height: 1.8;
+    margin-bottom: 2.5rem;
+    max-width: 420px;
+  }
+
+  .hero-buttons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .btn-primary {
+    background: var(--gold);
+    color: var(--dark);
+    border: none;
+    padding: 14px 32px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.3s;
+    text-decoration: none;
+    display: inline-block;
+  }
+  .btn-primary:hover {
+    background: var(--gold-light);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(212,175,55,0.4);
+  }
+
+  .btn-dark {
+    background: var(--dark);
+    color: var(--white);
+    border: none;
+    padding: 14px 32px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.3s;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+  }
+  .btn-dark:hover {
+    background: #2c2c2c;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+  }
+
+  .hero-image {
+    position: relative;
+  }
+  .hero-image img {
+    width: 100%;
+    height: 520px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 4px solid var(--gold);
+    box-shadow: 0 24px 60px rgba(0,0,0,0.15);
+  }
+
+  /* Why Us section on home */
+  .why-us {
+    background: var(--cream);
+    padding: 6rem 2rem;
+  }
+  .section-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.8rem;
+    font-weight: 400;
+    text-align: center;
+    color: var(--dark);
+    margin-bottom: 4rem;
+  }
+
+  .cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .feature-card {
+    background: var(--white);
+    border: 2px solid rgba(212,175,55,0.2);
+    border-radius: 12px;
+    padding: 2.5rem 2rem;
+    text-align: center;
+    transition: all 0.3s;
+  }
+  .feature-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 50px rgba(0,0,0,0.1);
+    border-color: var(--gold);
+  }
+
+  .feature-icon {
+    width: 64px;
+    height: 64px;
+    background: var(--gold);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    font-size: 1.8rem;
+  }
+
+  .feature-card h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    color: var(--dark);
+  }
+  .feature-card p {
+    color: var(--gray);
+    font-size: 0.9rem;
+    line-height: 1.7;
+    font-weight: 300;
+  }
+
+  /* CTA dark */
+  .cta-dark {
+    background: var(--dark);
+    color: var(--white);
+    text-align: center;
+    padding: 5rem 2rem;
+  }
+  .cta-dark h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.8rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+  }
+  .cta-dark p {
+    color: #aaa;
+    font-size: 1rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+  }
+
+  /* ===== PRODUCTS PAGE ===== */
+  #page-productos { background: var(--cream); }
+
+  .products-header {
+    text-align: center;
+    padding: 5rem 2rem 2rem;
+  }
+  .products-header h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 3.5rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+  }
+  .products-header p {
+    color: var(--gray);
+    font-size: 1rem;
+    font-weight: 300;
+    max-width: 500px;
+    margin: 0 auto;
+    line-height: 1.7;
+  }
+
+  .products-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 0 2rem 5rem;
+  }
+
+  .product-card {
+    background: var(--white);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+    transition: all 0.35s;
+    position: relative;
+  }
+  .product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 24px 50px rgba(0,0,0,0.14);
+  }
+
+  .product-img-wrap {
+    position: relative;
+    overflow: hidden;
+    height: 220px;
+  }
+  .product-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+  }
+  .product-card:hover .product-img-wrap img { transform: scale(1.07); }
+
+  .product-badge {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: var(--gold);
+    color: var(--dark);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 4px 10px;
+    border-radius: 20px;
+  }
+  .product-cat {
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    background: rgba(0,0,0,0.65);
+    color: var(--white);
+    font-size: 0.72rem;
+    padding: 4px 10px;
+    border-radius: 20px;
+    letter-spacing: 0.5px;
+  }
+
+  .product-info {
+    padding: 1.5rem;
+  }
+  .product-info h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+  }
+  .product-info p {
+    color: var(--gray);
+    font-size: 0.85rem;
+    font-weight: 300;
+    line-height: 1.6;
+    margin-bottom: 1.2rem;
+  }
+  .product-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .product-price {
+    color: var(--gold-dark);
+    font-size: 1.3rem;
+    font-weight: 700;
+    font-family: 'Cormorant Garamond', serif;
+  }
+  .btn-pedir {
+    background: var(--gold);
+    color: var(--dark);
+    border: none;
+    padding: 10px 20px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .btn-pedir:hover {
+    background: var(--gold-light);
+    box-shadow: 0 6px 18px rgba(212,175,55,0.4);
+    transform: scale(1.05);
+  }
+
+  /* ===== PROCESS PAGE ===== */
+  #page-proceso { background: var(--cream); }
+
+  .process-header {
+    text-align: center;
+    padding: 5rem 2rem 3rem;
+  }
+  .process-header h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 3.5rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+  }
+  .process-header p {
+    color: var(--gray);
+    font-size: 1rem;
+    font-weight: 300;
+    max-width: 500px;
+    margin: 0 auto;
+    line-height: 1.7;
+  }
+
+  .process-steps {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2rem 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .step-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.09);
+    transition: transform 0.3s;
+  }
+  .step-block:hover { transform: translateY(-4px); }
+  .step-block.reverse { direction: rtl; }
+  .step-block.reverse > * { direction: ltr; }
+
+  .step-img {
+    height: 320px;
+    overflow: hidden;
+  }
+  .step-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+  }
+  .step-block:hover .step-img img { transform: scale(1.05); }
+
+  .step-content {
+    background: var(--white);
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .step-number {
+    width: 48px;
+    height: 48px;
+    background: var(--gold);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--dark);
+    margin-bottom: 1.5rem;
+  }
+  .step-content h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    color: var(--dark);
+  }
+  .step-content p {
+    color: var(--gray);
+    font-size: 0.92rem;
+    font-weight: 300;
+    line-height: 1.8;
+  }
+
+  /* ===== TESTIMONIOS PAGE ===== */
+  #page-testimonios { background: var(--cream); }
+
+  .testimonios-header {
+    text-align: center;
+    padding: 5rem 2rem 3rem;
+  }
+  .testimonios-header h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 3.5rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+  }
+  .testimonios-header p {
+    color: var(--gray);
+    font-size: 1rem;
+    font-weight: 300;
+  }
+
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    max-width: 900px;
+    margin: 0 auto 4rem;
+    padding: 0 2rem;
+  }
+
+  .stat-card {
+    background: var(--white);
+    border-radius: 12px;
+    padding: 2.5rem 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+    transition: transform 0.3s;
+  }
+  .stat-card:hover { transform: translateY(-4px); }
+  .stat-card .stat-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.8rem;
+    font-weight: 600;
+    color: var(--gold-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+  .stars { color: var(--gold); font-size: 1.4rem; }
+  .stat-card .stat-label {
+    color: var(--gray);
+    font-size: 0.88rem;
+    font-weight: 300;
+    margin-top: 0.5rem;
+    letter-spacing: 0.5px;
+  }
+
+  .testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2rem 5rem;
+  }
+
+  .testimonial-card {
+    background: var(--white);
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+    position: relative;
+    transition: all 0.3s;
+  }
+  .testimonial-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 50px rgba(0,0,0,0.1);
+  }
+  .quote-mark {
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 4rem;
+    color: rgba(212,175,55,0.15);
+    line-height: 1;
+    font-weight: 700;
+  }
+
+  .reviewer {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 1rem;
+  }
+  .reviewer-avatar {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background: var(--cream-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .reviewer-avatar img { width: 100%; height: 100%; object-fit: cover; }
+  .reviewer-name {
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: var(--dark);
+  }
+  .reviewer-stars { color: var(--gold); font-size: 0.85rem; margin-top: 2px; }
+
+  .testimonial-text {
+    color: var(--gray);
+    font-size: 0.88rem;
+    line-height: 1.8;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    font-style: italic;
+  }
+  .testimonial-date {
+    font-size: 0.75rem;
+    color: #aaa;
+    letter-spacing: 0.5px;
+  }
+
+  /* ===== FOOTER ===== */
+  footer {
+    background: var(--dark);
+    color: var(--white);
+    padding: 4rem 2rem 2rem;
+  }
+  .footer-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    max-width: 1100px;
+    margin: 0 auto 3rem;
+  }
+  .footer-brand h3 {
+    font-family: 'Alex Brush', cursive;
+    font-size: 2.2rem;
+    color: var(--gold);
+    margin-bottom: 0.8rem;
+  }
+  .footer-brand p {
+    color: #aaa;
+    font-size: 0.88rem;
+    font-weight: 300;
+    line-height: 1.7;
+  }
+  .footer-col h4 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.3rem;
+    color: var(--gold);
+    margin-bottom: 1rem;
+    font-weight: 400;
+  }
+  .footer-col p, .footer-col a {
+    color: #aaa;
+    font-size: 0.85rem;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 0.6rem;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  .footer-col a:hover { color: var(--gold); }
+  .footer-col .icon { color: var(--gold); font-size: 0.9rem; }
+  .footer-bottom {
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(212,175,55,0.2);
+    color: #666;
+    font-size: 0.8rem;
+  }
+
+  /* ===== WHATSAPP FLOAT ===== */
+  .wa-float {
+    position: fixed;
+    bottom: 28px;
+    right: 28px;
+    background: var(--green-wa);
+    color: var(--white);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    box-shadow: 0 6px 24px rgba(37,211,102,0.4);
+    z-index: 999;
+    text-decoration: none;
+    transition: all 0.3s;
+    animation: pulse 2.5s infinite;
+  }
+  .wa-float:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 32px rgba(37,211,102,0.5);
+    animation: none;
+  }
+
+  @keyframes pulse {
+    0%, 100% { box-shadow: 0 6px 24px rgba(37,211,102,0.4); }
+    50% { box-shadow: 0 6px 36px rgba(37,211,102,0.7); }
+  }
+
+  /* ===== MODAL ===== */
+  .modal-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.65);
+    z-index: 2000;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    backdrop-filter: blur(4px);
+  }
+  .modal-overlay.open { display: flex; animation: fadeIn 0.25s ease; }
+
+  .modal {
+    background: var(--white);
+    border-radius: 16px;
+    max-width: 480px;
+    width: 100%;
+    padding: 2.5rem;
+    position: relative;
+    animation: slideUp 0.3s ease;
+  }
+  @keyframes slideUp {
+    from { transform: translateY(30px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+  .modal-close {
+    position: absolute;
+    top: 16px; right: 20px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--gray);
+    transition: color 0.2s;
+  }
+  .modal-close:hover { color: var(--dark); }
+
+  .modal h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 0.3rem;
+  }
+  .modal .product-price-modal {
+    color: var(--gold-dark);
+    font-size: 1.6rem;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+  }
+  .modal p {
+    color: var(--gray);
+    font-size: 0.9rem;
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+    line-height: 1.7;
+  }
+  .modal-btns { display: flex; gap: 1rem; }
+
+  /* ===== TOAST ===== */
+  .toast {
+    position: fixed;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%) translateY(20px);
+    background: var(--dark);
+    color: var(--white);
+    padding: 14px 28px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    z-index: 3000;
+    opacity: 0;
+    transition: all 0.4s;
+    pointer-events: none;
+    border-left: 4px solid var(--gold);
+  }
+  .toast.show {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+
+  /* ===== RESPONSIVE ===== */
+  @media (max-width: 900px) {
+    .hero { grid-template-columns: 1fr; text-align: center; }
+    .hero-text p { max-width: 100%; }
+    .hero-buttons { justify-content: center; }
+    .hero-image { order: -1; }
+    .hero-image img { height: 300px; }
+    .hero-text h1 { font-size: 3rem; }
+
+    .cards-grid { grid-template-columns: 1fr; }
+    .products-grid { grid-template-columns: 1fr 1fr; }
+    .stats-grid { grid-template-columns: 1fr; }
+    .testimonials-grid { grid-template-columns: 1fr; }
+    .step-block { grid-template-columns: 1fr; }
+    .step-block.reverse { direction: ltr; }
+    .step-img { height: 240px; }
+    .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
+    .nav-links { display: none; }
+    .hamburger { display: flex; }
+  }
+
+  @media (max-width: 600px) {
+    .products-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <a class="nav-logo" onclick="showPage('inicio')">Repostería Alcira</a>
+  <ul class="nav-links" id="navLinks">
+    <li><a onclick="showPage('inicio')" id="nav-inicio" class="active">Inicio</a></li>
+    <li><a onclick="showPage('productos')" id="nav-productos">Productos</a></li>
+    <li><a onclick="showPage('proceso')" id="nav-proceso">Por qué Elegirnos</a></li>
+    <li><a onclick="showPage('testimonios')" id="nav-testimonios">Testimonios</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <a onclick="showPage('inicio'); toggleMenu()">Inicio</a>
+  <a onclick="showPage('productos'); toggleMenu()">Productos</a>
+  <a onclick="showPage('proceso'); toggleMenu()">Por qué Elegirnos</a>
+  <a onclick="showPage('testimonios'); toggleMenu()">Testimonios</a>
+</div>
+
+<!-- ===== HOME PAGE ===== -->
+<div class="page active" id="page-inicio">
+  <!-- BANNER -->
+<section class="banner">
+  <h2>🎂 Promoción Especial</h2>
+  <p>Obtén un 10% de descuento en tu primer pedido</p>
+  <a href="https://wa.me/573138029505?text=Hola!%20Quiero%20mi%20descuento" target="_blank">
+    Pedir ahora
+  </a>
+</section>
+  <section style="background: var(--white);">
+    <div class="hero">
+      <div class="hero-text">
+        <h1>Repostería Alcira</h1>
+        
+        <p>Elaboramos tortas, cupcakes y postres artesanales con ingredientes frescos y recetas tradicionales. Personalizamos cada pedido para que sea único e inolvidable.</p>
+        <div class="hero-trust">
+          <span>✓ Hecho a mano en Ibagué</span>
+          <span>✓ Entrega a domicilio</span>
+          <span>✓ Ingredientes 100% naturales</span>
+        </div>
+
+        <br>
+        <div class="hero-buttons">
+          <button class="btn-primary" onclick="showPage('productos')">Ver Nuestros dulces productos</button>
+          <a href="https://wa.me/573138029505?text=Hola!%20Me%20gustar%C3%ADa%20hacer%20un%20pedido." target="_blank" class="btn-dark">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path></svg>
+            Pide por WhatsApp
+          </a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="portadalogo.jpeg" alt="Repostería artesanal">
+      </div>
+    </div>
+  </section>
+
+  <section class="why-us">
+    <div style="max-width:1100px;margin:0 auto;">
+      <h2 class="section-title">¿Por qué elegirnos?</h2>
+      <div class="cards-grid">
+        <div class="feature-card">
+          <div class="feature-icon">🎂</div>
+          <h3>Artesanal</h3>
+          <p>Cada producto es elaborado a mano con técnicas tradicionales y recetas familiares transmitidas por generaciones.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">❤️</div>
+          <h3>Con Amor</h3>
+          <p>Ponemos el corazón en cada creación para que sientas el sabor a hogar en cada bocado que compartes.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">✨</div>
+          <h3>Personalizado</h3>
+          <p>Adaptamos nuestros productos a tus gustos y necesidades para crear momentos únicos e inolvidables.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-dark">
+    <h2>¿Listo para endulzar tu día?</h2>
+    <p>Descubre nuestros deliciosos productos y sorprende a tus seres queridos.</p>
+    <button class="btn-primary" onclick="showPage('productos')">Explorar Productos</button>
+  </section>
+
+  <!-- FOOTER inside home -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h3>Repostería Alcira</h3>
+        <p>Creando momentos dulces con amor y dedicación artesanal desde Ibagué, Colombia.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <a href="tel:3138029505"><span class="icon">📞</span> 3138029505</a>
+        <a href="mailto:juanestorres2022@gmail.com"><span class="icon">✉️</span> juanestorres2022@gmail.com</a>
+        <p><span class="icon">📍</span> Ibagué, Colombia</p>
+      </div>
+      <div class="footer-col">
+        <h4>Cocina Oculta</h4>
+        <p style="color:#aaa;font-size:0.85rem;line-height:1.7;">Somos una cocina oculta. Todos nuestros pedidos se realizan por encargo y se entregan a domicilio o en puntos acordados.</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Repostería Alcira. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+</div>
+
+<!-- ===== PRODUCTS PAGE ===== -->
+<div class="page" id="page-productos">
+  <div class="products-header">
+    <h2>Nuestros Productos</h2>
+    <p>Descubre nuestra selección de delicias artesanales, hechas con amor y los mejores ingredientes.</p>
+  </div>
+
+  <div class="products-grid" id="productsGrid">
+    <!-- JS fills this -->
+  </div>
+
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h3>Repostería Alcira</h3>
+        <p>Creando momentos dulces con amor y dedicación artesanal.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <a href="tel:3138029505"><span class="icon">📞</span> 3138029505</a>
+        <a href="mailto:juanestorres2022@gmail.com"><span class="icon">✉️</span> juanestorres2022@gmail.com</a>
+        <p><span class="icon">📍</span> Ibagué, Colombia</p>
+      </div>
+      <div class="footer-col">
+        <h4>Cocina Oculta</h4>
+        <p style="color:#aaa;font-size:0.85rem;line-height:1.7;">Pedidos por encargo. Entrega a domicilio o puntos acordados.</p>
+      </div>
+    </div>
+    <div class="footer-bottom"><p>© 2026 Repostería Alcira. Todos los derechos reservados.</p></div>
+  </footer>
+</div>
+
+<!-- ===== PROCESO PAGE ===== -->
+<div class="page" id="page-proceso">
+  <div class="process-header">
+    <h2>Por qué Elegirnos</h2>
+    <p>Conoce nuestro proceso artesanal y descubre por qué cada producto es especial.</p>
+  </div>
+  <div style="text-align:center;margin-bottom:2rem;">
+    <h3 style="font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:400;">Nuestro Proceso</h3>
+  </div>
+
+  <div class="process-steps">
+    <div class="step-block">
+      <div class="step-img">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiDYt-13mLq_P9yJZbk7Xyfw2ltFN5QdCH_IahacOsgptVZQKD3NGn21bwjM1ch5F9biTyr81fFMl1aWRdO0IFFSGNR66kESd0SRLsJKFCGR7xApSfsGWnrl3n6BSSLQmh1GaxfWeCFHnBZ/s1600/food-dessert-cake-eggs-butter-cocoa-sugar-milk-whip.jpg" alt="Ingredientes frescos">
+      </div>
+      <div class="step-content">
+        <div class="step-number">1</div>
+        <h3>Ingredientes Frescos</h3>
+        <p>Seleccionamos los mejores ingredientes: mantequilla de primera calidad, huevos frescos, harina premium y leche entera. Todo 100% natural, sin conservantes ni aditivos artificiales.</p>
+      </div>
+    </div>
+
+    <div class="step-block reverse">
+      <div class="step-img">
+        <img src="https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=700&q=80" alt="Preparación artesanal">
+      </div>
+      <div class="step-content">
+        <div class="step-number">2</div>
+        <h3>Preparación Artesanal</h3>
+        <p>Cada mezcla se realiza a mano siguiendo recetas tradicionales. Dedicamos tiempo y cuidado a cada etapa del proceso para garantizar la perfecta textura y sabor en cada creación.</p>
+      </div>
+    </div>
+
+    <div class="step-block">
+      <div class="step-img">
+        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=700&q=80" alt="Decoración">
+      </div>
+      <div class="step-content">
+        <div class="step-number">3</div>
+        <h3>Decoración con Detalle</h3>
+        <p>Cada torta y postre se decora con precisión artística. Personalizamos diseños según la ocasión, añadiendo ese toque único que hace especial cada momento.</p>
+      </div>
+    </div>
+
+    <div class="step-block reverse">
+      <div class="step-img">
+        <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=700&q=80" alt="Entrega">
+      </div>
+      <div class="step-content">
+        <div class="step-number">4</div>
+        <h3>Entrega a Tu Puerta</h3>
+        <p>Coordinamos la entrega en el momento perfecto para que llegue en óptimas condiciones. Tu felicidad y satisfacción son nuestra mayor recompensa.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h3>Repostería Alcira</h3>
+        <p>Creando momentos dulces con amor y dedicación artesanal.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <a href="tel:3138029505"><span class="icon">📞</span> 3138029505</a>
+        <a href="mailto:juanestorres2022@gmail.com"><span class="icon">✉️</span> juanestorres2022@gmail.com</a>
+        <p><span class="icon">📍</span> Ibagué, Colombia</p>
+      </div>
+      <div class="footer-col">
+        <h4>Cocina Oculta</h4>
+        <p style="color:#aaa;font-size:0.85rem;line-height:1.7;">Pedidos por encargo. Entrega a domicilio o puntos acordados.</p>
+      </div>
+    </div>
+    <div class="footer-bottom"><p>© 2026 Repostería Alcira. Todos los derechos reservados.</p></div>
+  </footer>
+</div>
+
+
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  cursor: pointer;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.video-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0,0,0,0.6);
+  color: white;
+  font-size: 2rem;
+  padding: 20px;
+  border-radius: 50%;
+}
+<div class="page" id="page-testimonios">
+  <div class="testimonios-header">
+    <h2>Testimonios</h2>
+    <p>Conoce las experiencias de nuestros clientes felices.</p>
+  </div>
+
+  <div class="stats-grid">
+    <div class="stat-card">
+      <div class="stat-num">+500</div>
+      <div class="stat-label">Clientes Satisfechos</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num">+1200</div>
+      <div class="stat-label">Tortas Creadas</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num">5.0 <span class="stars">★★★★★</span></div>
+      <div class="stat-label">Calificación Promedio</div>
+    </div>
+  </div>
+
+  <div class="testimonials-grid">
+    <div class="testimonial-card">
+      <div class="quote-mark">"</div>
+      <div class="reviewer">
+        <div class="reviewer-avatar" style="background:#f8d7b0;">👩</div>
+        <div>
+          <div class="reviewer-name">María Rodríguez</div>
+          <div class="reviewer-stars">★★★★★</div>
+        </div>
+      </div>
+      <p class="testimonial-text">Pedí una torta personalizada para el cumpleaños de mi hija y quedó exactamente como la quería. ¡El sabor es increíble! Todos mis invitados pidieron el contacto.</p>
+      <div class="testimonial-date">Marzo 2026</div>
+    </div>
+
+    <div class="video-testimonio">
+  <div class="video-wrapper" onclick="loadVideo(this)">
+    <img src="https://img.youtube.com/vi/-fuJzoqkWhU/hqdefault.jpg" alt="Testimonio en video">
+    <div class="play-button">▶</div>
+  </div>
+</div>
+
+    <div class="testimonial-card">
+      <div class="quote-mark">"</div>
+      <div class="reviewer">
+        <div class="reviewer-avatar" style="background:#d4e8d4;">👨</div>
+        <div>
+          <div class="reviewer-name">Carlos Méndez</div>
+          <div class="reviewer-stars">★★★★★</div>
+        </div>
+      </div>
+      <p class="testimonial-text">La mejor repostería artesanal que he probado. Los cupcakes son espectaculares y la atención al cliente es excelente. 100% recomendado.</p>
+      <div class="testimonial-date">Febrero 2026</div>
+    </div>
+
+    <div class="testimonial-card">
+      <div class="quote-mark">"</div>
+      <div class="reviewer">
+        <div class="reviewer-avatar" style="background:#f8b0b0;">👩‍🦱</div>
+        <div>
+          <div class="reviewer-name">Ana Sofía García</div>
+          <div class="reviewer-stars">★★★★★</div>
+        </div>
+      </div>
+      <p class="testimonial-text">Ordené galletas para un evento corporativo y fueron un éxito total. Presentación impecable, sabor delicioso y entrega puntual.</p>
+      <div class="testimonial-date">Marzo 2026</div>
+    </div>
+
+    <div class="testimonial-card">
+      <div class="quote-mark">"</div>
+      <div class="reviewer">
+        <div class="reviewer-avatar" style="background:#b0d4f8;">👨‍💼</div>
+        <div>
+          <div class="reviewer-name">Sebastián Torres</div>
+          <div class="reviewer-stars">★★★★★</div>
+        </div>
+      </div>
+      <p class="testimonial-text">Encargué una torta de bodas y superó todas mis expectativas. Los detalles de la decoración fueron perfectos. Nuestros invitados no podían creer que fuera casera.</p>
+      <div class="testimonial-date">Enero 2026</div>
+    </div>
+
+    <div class="testimonial-card">
+      <div class="quote-mark">"</div>
+      <div class="reviewer">
+        <div class="reviewer-avatar" style="background:#e8d4f8;">👩‍🦰</div>
+        <div>
+          <div class="reviewer-name">Valentina Ospina</div>
+          <div class="reviewer-stars">★★★★★</div>
+        </div>
+      </div>
+      <p class="testimonial-text">Las brownies de chocolate son adictivas. Los pido cada semana para la oficina. El servicio es siempre rápido y confiable. ¡Totalmente recomendado!</p>
+      <div class="testimonial-date">Marzo 2026</div>
+    </div>
+
+    <div class="testimonial-card">
+      <div class="quote-mark">"</div>
+      <div class="reviewer">
+        <div class="reviewer-avatar" style="background:#f8f0b0;">👨‍🦳</div>
+        <div>
+          <div class="reviewer-name">Jorge Herrera</div>
+          <div class="reviewer-stars">★★★★★</div>
+        </div>
+      </div>
+      <p class="testimonial-text">Excelente calidad y sabor. Pedí para el aniversario de mis padres y fue el detalle perfecto. Muy profesional y puntual en la entrega. Definitivamente volvería.</p>
+      <div class="testimonial-date">Febrero 2026</div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h3>Repostería Alcira</h3>
+        <p>Creando momentos dulces con amor y dedicación artesanal.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <a href="tel:3138029505"><span class="icon">📞</span> 3138029505</a>
+        <a href="mailto:juanestorres2022@gmail.com"><span class="icon">✉️</span> juanestorres2022@gmail.com</a>
+        <p><span class="icon">📍</span> Ibagué, Colombia</p>
+      </div>
+      <div class="footer-col">
+        <h4>Cocina Oculta</h4>
+        <p style="color:#aaa;font-size:0.85rem;line-height:1.7;">Pedidos por encargo. Entrega a domicilio o puntos acordados.</p>
+      </div>
+    </div>
+    <div class="footer-bottom"><p>© 2026 Repostería Alcira. Todos los derechos reservados.</p></div>
+  </footer>
+</div>
+
+<!-- WHATSAPP FLOAT -->
+<a href="https://wa.me/573138029505?text=Hola!%20Me%20gustar%C3%ADa%20hacer%20un%20pedido." target="_blank" class="wa-float" aria-label="WhatsApp">
+  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path></svg>
+</a>
+
+<!-- MODAL -->
+<div class="modal-overlay" id="modal" onclick="closeModal(event)">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal()">✕</button>
+    <h3 id="modalName"></h3>
+    <div class="product-price-modal" id="modalPrice"></div>
+    <p id="modalDesc"></p>
+    <div class="modal-btns">
+      <a id="modalWA" href="#" target="_blank" class="btn-primary" style="text-decoration:none;">
+        Pedir por WhatsApp
+      </a>
+      <button class="btn-dark" onclick="closeModal()">Cerrar</button>
+    </div>
+  </div>
+</div>
+
+<!-- TOAST -->
+<div class="toast" id="toast"></div>
+
+<script>
+  // ===== PRODUCTS DATA =====
+  const products = [
+    {
+      name: 'Torta de Chocolate',
+      cat: 'Tortas',
+      price: '$85.000',
+      desc: 'Deliciosa torta de chocolate con tres capas y ganache de chocolate belga.',
+      badge: 'Popular',
+      img: 'https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=600&q=80'
+    },
+    {
+      name: 'Cupcakes Variados',
+      cat: 'Magdalenas',
+      price: '$35.000',
+      desc: 'Set de 6 cupcakes con diferentes sabores y decoraciones personalizadas.',
+      badge: 'Popular',
+      img: 'https://images.unsplash.com/photo-1486427944299-d1955d23e34d?w=600&q=80'
+    },
+    {
+      name: 'Galletas Artesanales',
+      cat: 'Galletas',
+      price: '$25.000',
+      desc: 'Paquete de galletas hechas a mano con mantequilla y chispas de chocolate.',
+      badge: 'Popular',
+      img: 'https://images.unsplash.com/photo-1499636136210-6f4ee915583e?w=600&q=80'
+    },
+    {
+      name: 'Torta de Cumpleaños',
+      cat: 'Tortas',
+      price: '$95.000',
+      desc: 'Torta personalizada para celebraciones especiales con decoración a tu gusto.',
+      badge: 'Popular',
+      img: 'https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=600&q=80'
+    },
+    {
+      name: 'Brownies de Chocolate',
+      cat: 'Dulces',
+      price: '$28.000',
+      desc: 'Brownies húmedos y densos con corazón de chocolate fundido. Irresistibles.',
+      badge: 'Popular',
+      img: 'https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=600&q=80'
+    },
+    {
+      name: 'Tarta de Frutas',
+      cat: 'Tartas',
+      price: '$65.000',
+      desc: 'Tarta fresca con crema pastelera y frutas de temporada sobre base crocante.',
+      badge: '',
+      img: 'https://images.unsplash.com/photo-1488477181946-6428a0291777?w=600&q=80'
+    },
+    {
+      name: 'Macarons',
+      cat: 'Dulces',
+      price: '$38.000',
+      desc: 'Set de 8 macarons artesanales en variedad de sabores y colores pastel.',
+      badge: 'Nuevo',
+      img: 'https://images.unsplash.com/photo-1569864358642-9d1684040f43?w=600&q=80'
+    },
+    {
+      name: 'Cheesecake',
+      cat: 'Tartas',
+      price: '$72.000',
+      desc: 'Cheesecake cremoso con base de galleta y coulis de frutos rojos.',
+      badge: 'Popular',
+      img: 'https://images.unsplash.com/photo-1567171466295-4afa63d45416?w=600&q=80'
+    },
+    {
+      name: 'Torta Red Velvet',
+      cat: 'Tortas',
+      price: '$90.000',
+      desc: 'Elegante torta red velvet con frosting de queso crema y decoración clásica.',
+      badge: 'Nuevo',
+      img: 'https://images.unsplash.com/photo-1586788680434-30d324b2d46f?w=600&q=80'
+    },
+  ];
+
+  function renderProducts() {
+    const grid = document.getElementById('productsGrid');
+    grid.innerHTML = products.map((p, i) => `
+      <div class="product-card">
+        <div class="product-img-wrap">
+          <img src="${p.img}" alt="${p.name}" loading="lazy">
+          ${p.badge ? `<span class="product-badge">${p.badge}</span>` : ''}
+          <span class="product-cat">${p.cat}</span>
+        </div>
+        <div class="product-info">
+          <h3>${p.name}</h3>
+          <p>${p.desc}</p>
+          <div class="product-footer">
+            <span class="product-price">${p.price}</span>
+            <button class="btn-pedir" onclick="openModal(${i})">Pedir</button>
+          </div>
+        </div>
+      </div>
+    `).join('');
+  }
+
+  // ===== PAGE NAVIGATION =====
+  function showPage(page) {
+    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+    document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
+
+    document.getElementById('page-' + page).classList.add('active');
+    const navEl = document.getElementById('nav-' + page);
+    if (navEl) navEl.classList.add('active');
+
+    window.scrollTo(0, 0);
+  }
+
+  // ===== HAMBURGER =====
+  function toggleMenu() {
+    const burger = document.getElementById('hamburger');
+    const menu = document.getElementById('mobileMenu');
+    burger.classList.toggle('open');
+    menu.classList.toggle('open');
+  }
+
+  // ===== MODAL =====
+  function openModal(i) {
+    const p = products[i];
+    document.getElementById('modalName').textContent = p.name;
+    document.getElementById('modalPrice').textContent = p.price;
+    document.getElementById('modalDesc').textContent = p.desc;
+    const msg = encodeURIComponent(`Hola! Me gustaría pedir: ${p.name} (${p.price}). ¿Está disponible?`);
+    document.getElementById('modalWA').href = `https://wa.me/573138029505?text=${msg}`;
+    document.getElementById('modal').classList.add('open');
+  }
+
+  function closeModal(e) {
+    if (!e || e.target === document.getElementById('modal') || e.currentTarget.tagName === 'BUTTON') {
+      document.getElementById('modal').classList.remove('open');
+    }
+  }
+
+  // ===== TOAST =====
+  function showToast(msg) {
+    const t = document.getElementById('toast');
+    t.textContent = msg;
+    t.classList.add('show');
+    setTimeout(() => t.classList.remove('show'), 3000);
+  }
+
+  // ===== INIT =====
+  renderProducts();
+
+  // Close mobile menu on outside click
+  document.addEventListener('click', function(e) {
+    const menu = document.getElementById('mobileMenu');
+    const burger = document.getElementById('hamburger');
+    if (menu.classList.contains('open') && !menu.contains(e.target) && !burger.contains(e.target)) {
+      toggleMenu();
+    }
+  });
+
+ function loadVideo(element) {
+  element.innerHTML = `
+    <iframe width="100%" height="100%" 
+      src="https://www.youtube.com/embed/-fuJzoqkWhU?autoplay=1" 
+      frameborder="0" 
+      allow="autoplay; encrypted-media" 
+      allowfullscreen>
+    </iframe>
+  `;
+}
+</script>
+</body>
+</html>
+0
